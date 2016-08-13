@@ -7,6 +7,7 @@
 #include "abstractdrawingtool.h"
 #include "pencildrawingtool.h"
 #include "linedrawingtool.h"
+#include "rectangledrawingtool.h"
 
 class Director: public QObject {
     Q_OBJECT
