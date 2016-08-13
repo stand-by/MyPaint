@@ -1,7 +1,10 @@
 #include "abstractdrawingtool.h"
 
 AbstractDrawingTool::AbstractDrawingTool(QObject *parent) : QObject(parent) {
+    scene = NULL;
+    view = NULL;
     canDraw = false;
+    //customize CapStyle, joinStyle here
     pen = QPen(Qt::black);
     pen.setWidth(1);
 }
