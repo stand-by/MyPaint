@@ -21,7 +21,8 @@ SOURCES += main.cpp\
     pencildrawingtool.cpp \
     linedrawingtool.cpp \
     rectangledrawingtool.cpp \
-    ellipsedrawingtool.cpp
+    ellipsedrawingtool.cpp \
+    filledrectangledrawingtool.cpp
 
 HEADERS  += mainwindow.h \
     view.h \
@@ -30,7 +31,8 @@ HEADERS  += mainwindow.h \
     pencildrawingtool.h \
     linedrawingtool.h \
     rectangledrawingtool.h \
-    ellipsedrawingtool.h
+    ellipsedrawingtool.h \
+    filledrectangledrawingtool.h
 
 FORMS    += mainwindow.ui
 
