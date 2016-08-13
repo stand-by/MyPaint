@@ -41,8 +41,12 @@
     </property>
     <addaction name="actionPencil"/>
     <addaction name="actionLine"/>
+    <addaction name="separator"/>
     <addaction name="actionRectangle"/>
+    <addaction name="actionFilled_Rectangle"/>
+    <addaction name="separator"/>
     <addaction name="actionEllipse"/>
+    <addaction name="actionFilled_Ellipse"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuTools"/>
@@ -65,8 +69,12 @@
    </attribute>
    <addaction name="actionPencil"/>
    <addaction name="actionLine"/>
+   <addaction name="separator"/>
    <addaction name="actionRectangle"/>
+   <addaction name="actionFilled_Rectangle"/>
+   <addaction name="separator"/>
    <addaction name="actionEllipse"/>
+   <addaction name="actionFilled_Ellipse"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
@@ -139,6 +147,24 @@
    </property>
    <property name="text">
     <string>Ellipse</string>
+   </property>
+  </action>
+  <action name="actionFilled_Rectangle">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Rectangle-48.png</normaloff>:/icons/Rectangle-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Filled Rectangle</string>
+   </property>
+  </action>
+  <action name="actionFilled_Ellipse">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Ellipse-48.png</normaloff>:/icons/Ellipse-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Filled Ellipse</string>
    </property>
   </action>
  </widget>

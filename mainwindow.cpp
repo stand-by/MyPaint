@@ -7,12 +7,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
     this->setWindowTitle("MyPaint");
     this->setCentralWidget(director->view);
-
-
-
-
-
-    ui->statusBar->showMessage("Ready");
 }
 
 MainWindow::~MainWindow() {
