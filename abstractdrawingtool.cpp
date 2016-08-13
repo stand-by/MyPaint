@@ -6,7 +6,11 @@ AbstractDrawingTool::AbstractDrawingTool(QObject *parent) : QObject(parent) {
     pen.setWidth(1);
 }
 AbstractDrawingTool::~AbstractDrawingTool() {
-
+    disconnect(view,SIGNAL(mousePress_transmitter(QMouseEvent*)),this,SLOT(mousePress_reciever(QMouseEvent *)));
+    disconnect(view,SIGNAL(mouseMove_transmitter(QMouseEvent*)),this,SLOT(mouseMove_reciever(QMouseEvent *)));
+    disconnect(view,SIGNAL(mouseRelease_transmitter(QMouseEvent*)),this,SLOT(mouseRelease_reciever(QMouseEvent *)));
+    scene = NULL;
+    view = NULL;
 }
 
 void AbstractDrawingTool::setPenColor(QColor color) {
