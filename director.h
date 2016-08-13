@@ -6,6 +6,7 @@
 #include "view.h"
 #include "abstractdrawingtool.h"
 #include "pencildrawingtool.h"
+#include "linedrawingtool.h"
 
 class Director: public QObject {
     Q_OBJECT
@@ -14,7 +15,7 @@ private:
     View *view;
     QGraphicsScene *scene;
     //instance for tool
-    AbstractDrawingTool *pencilTool;
+    AbstractDrawingTool *tool;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();

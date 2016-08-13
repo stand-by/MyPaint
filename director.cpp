@@ -3,7 +3,7 @@
 Director::Director(QObject *parent): QObject(parent) {
     view = new View;
     scene = new QGraphicsScene(this);
-    pencilTool = new PencilDrawingTool(this);
+    tool = new LineDrawingTool(this);
 
     //synchronize scene's and view's coordinate systems
     view->setAlignment(Qt::AlignLeft | Qt::AlignTop);
@@ -11,7 +11,7 @@ Director::Director(QObject *parent): QObject(parent) {
 
     view->setScene(scene);
 
-    pencilTool->bindSceneAndView(scene, view);
+    tool->bindSceneAndView(scene, view);
     //rectangle->bindSceneAndView(scene, view);
     //line->bindSceneAndView(scene, view);
     //pencil->bindSceneAndView(scene, view);
@@ -19,7 +19,7 @@ Director::Director(QObject *parent): QObject(parent) {
 }
 
 Director::~Director() {
-    delete pencilTool;
+    delete tool;
 
     delete view;
     delete scene;
