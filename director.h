@@ -7,6 +7,7 @@
 #include "pencil.h"
 #include "line.h"
 #include "rectangle.h"
+#include "ellipse.h"
 
 class Director: public QObject {
     Q_OBJECT
@@ -18,6 +19,7 @@ private:
     Pencil *pencil;
     Line *line;
     Rectangle *rectangle;
+    Ellipse *ellipse;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
