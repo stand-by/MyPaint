@@ -8,5 +8,6 @@ Director::Director(QObject *parent): QObject(parent) {
 Director::~Director() {
     delete view;
     delete scene;
+    delete pencil;
 }
 
