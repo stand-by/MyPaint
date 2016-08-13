@@ -4,6 +4,7 @@ Director::Director(QObject *parent): QObject(parent) {
     view = new View;
     scene = new QGraphicsScene(this);
     pencil = new Pencil(this);
+    line = new Line(this);
 
     //synchronize scene's and view's coordinate systems
     view->setAlignment(Qt::AlignLeft | Qt::AlignTop);
@@ -11,7 +12,8 @@ Director::Director(QObject *parent): QObject(parent) {
 
     view->setScene(scene);
 
-    pencil->bindSceneAndView(scene, view);
+    line->bindSceneAndView(scene, view);
+    //pencil->bindSceneAndView(scene, view);
     //???scene->addItem(pencil->getGraphicsItem());???
 }
 
@@ -19,5 +21,6 @@ Director::~Director() {
     delete view;
     delete scene;
     delete pencil;
+    delete line;
 }
 

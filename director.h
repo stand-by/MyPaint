@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include "view.h"
 #include "pencil.h"
+#include "line.h"
 
 class Director: public QObject {
     Q_OBJECT
@@ -14,6 +15,7 @@ private:
     QGraphicsScene *scene;
     //instance for tool
     Pencil *pencil;
+    Line *line;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
