@@ -4,6 +4,7 @@
 #
 #-------------------------------------------------
 
+
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -19,7 +20,8 @@ SOURCES += main.cpp\
     pencil.cpp \
     line.cpp \
     rectangle.cpp \
-    ellipse.cpp
+    ellipse.cpp \
+    abstractdrawingtool.cpp
 
 HEADERS  += mainwindow.h \
     view.h \
@@ -27,7 +29,8 @@ HEADERS  += mainwindow.h \
     pencil.h \
     line.h \
     rectangle.h \
-    ellipse.h
+    ellipse.h \
+    abstractdrawingtool.h
 
 FORMS    += mainwindow.ui
 
