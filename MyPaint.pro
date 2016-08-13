@@ -17,10 +17,6 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     view.cpp \
     director.cpp \
-    pencil.cpp \
-    line.cpp \
-    rectangle.cpp \
-    ellipse.cpp \
     abstractdrawingtool.cpp \
     pencildrawingtool.cpp \
     linedrawingtool.cpp \
@@ -30,10 +26,6 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     view.h \
     director.h \
-    pencil.h \
-    line.h \
-    rectangle.h \
-    ellipse.h \
     abstractdrawingtool.h \
     pencildrawingtool.h \
     linedrawingtool.h \
