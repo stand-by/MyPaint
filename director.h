@@ -6,6 +6,7 @@
 #include "view.h"
 #include "pencil.h"
 #include "line.h"
+#include "rectangle.h"
 
 class Director: public QObject {
     Q_OBJECT
@@ -16,6 +17,7 @@ private:
     //instance for tool
     Pencil *pencil;
     Line *line;
+    Rectangle *rectangle;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
