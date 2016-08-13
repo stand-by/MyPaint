@@ -20,6 +20,8 @@ public:
     explicit AbstractDrawingTool(QObject *parent = 0);
     ~AbstractDrawingTool();
     void bindSceneAndView(QGraphicsScene *s, View *v);
+    void setPenColor(QColor color);
+    void setPenWidth(int width);
 public slots:
     virtual void mousePress_reciever(QMouseEvent *event) = 0;
     virtual void mouseMove_reciever(QMouseEvent *event) = 0;

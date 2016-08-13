@@ -9,3 +9,9 @@ AbstractDrawingTool::~AbstractDrawingTool() {
 
 }
 
+void AbstractDrawingTool::setPenColor(QColor color) {
+    pen.setColor(color);
+}
+void AbstractDrawingTool::setPenWidth(int width) {
+    pen.setWidth(width);
+}
