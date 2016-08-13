@@ -17,13 +17,15 @@ SOURCES += main.cpp\
     view.cpp \
     director.cpp \
     pencil.cpp \
-    line.cpp
+    line.cpp \
+    rectangle.cpp
 
 HEADERS  += mainwindow.h \
     view.h \
     director.h \
     pencil.h \
-    line.h
+    line.h \
+    rectangle.h
 
 FORMS    += mainwindow.ui
 
