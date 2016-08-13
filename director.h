@@ -17,6 +17,9 @@ private:
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
+
+    //set MainWindow as a friend of Director because of private members access necessity in MainWindow constructor
+    friend class MainWindow;
 };
 
 #endif // DIRECTOR_H
