@@ -3,7 +3,7 @@
 Director::Director(QObject *parent): QObject(parent) {
     view = new View;
     scene = new QGraphicsScene(this);
-    tool = new FilledRectangleDrawingTool(this);
+    tool = new FilledEllipseDrawingTool(this);
 
     //synchronize scene's and view's coordinate systems
     view->setAlignment(Qt::AlignLeft | Qt::AlignTop);

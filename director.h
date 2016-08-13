@@ -10,6 +10,7 @@
 #include "rectangledrawingtool.h"
 #include "ellipsedrawingtool.h"
 #include "filledrectangledrawingtool.h"
+#include "filledellipsedrawingtool.h"
 
 class Director: public QObject {
     Q_OBJECT
