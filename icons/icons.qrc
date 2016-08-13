@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Save as-48.png</file>
+        <file>Save-48.png</file>
+        <file>Rectangle Stroked-48.png</file>
+        <file>Rectangle-48.png</file>
+        <file>Pencil-48.png</file>
+        <file>Line-48.png</file>
+        <file>icons.qrc</file>
+        <file>Eraser-48.png</file>
+        <file>Ellipse Stroked-48.png</file>
+        <file>Ellipse-48.png</file>
+        <file>Create New-48.png</file>
+        <file>Add File-48.png</file>
+    </qresource>
+</RCC>
