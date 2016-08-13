@@ -4,10 +4,8 @@
 #include <QObject>
 #include <QGraphicsScene>
 #include "view.h"
-#include "pencil.h"
-#include "line.h"
-#include "rectangle.h"
-#include "ellipse.h"
+#include "abstractdrawingtool.h"
+#include "pencildrawingtool.h"
 
 class Director: public QObject {
     Q_OBJECT
@@ -16,10 +14,7 @@ private:
     View *view;
     QGraphicsScene *scene;
     //instance for tool
-    Pencil *pencil;
-    Line *line;
-    Rectangle *rectangle;
-    Ellipse *ellipse;
+    AbstractDrawingTool *pencilTool;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
