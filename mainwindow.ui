@@ -55,6 +55,12 @@
    <property name="movable">
     <bool>false</bool>
    </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
    <attribute name="toolBarArea">
     <enum>LeftToolBarArea</enum>
    </attribute>
@@ -68,47 +74,81 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Add File-48.png</normaloff>:/icons/Add File-48.png</iconset>
+   </property>
    <property name="text">
     <string>Open</string>
    </property>
   </action>
   <action name="actionNew">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Create New-48.png</normaloff>:/icons/Create New-48.png</iconset>
+   </property>
    <property name="text">
     <string>New</string>
    </property>
   </action>
   <action name="actionSave">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Save-48.png</normaloff>:/icons/Save-48.png</iconset>
+   </property>
    <property name="text">
     <string>Save</string>
    </property>
   </action>
   <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Save as-48.png</normaloff>:/icons/Save as-48.png</iconset>
+   </property>
    <property name="text">
     <string>Save As</string>
    </property>
   </action>
   <action name="actionPencil">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Pencil-48.png</normaloff>:/icons/Pencil-48.png</iconset>
+   </property>
    <property name="text">
     <string>Pencil</string>
    </property>
   </action>
   <action name="actionRectangle">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Rectangle Stroked-48.png</normaloff>:/icons/Rectangle Stroked-48.png</iconset>
+   </property>
    <property name="text">
     <string>Rectangle</string>
    </property>
   </action>
   <action name="actionLine">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Line-48.png</normaloff>:/icons/Line-48.png</iconset>
+   </property>
    <property name="text">
     <string>Line</string>
    </property>
   </action>
   <action name="actionEllipse">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Ellipse Stroked-48.png</normaloff>:/icons/Ellipse Stroked-48.png</iconset>
+   </property>
    <property name="text">
     <string>Ellipse</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
  <connections/>
 </ui>
