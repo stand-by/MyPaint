@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     view.cpp \
-    director.cpp
+    director.cpp \
+    pencil.cpp
 
 HEADERS  += mainwindow.h \
     view.h \
-    director.h
+    director.h \
+    pencil.h
 
 FORMS    += mainwindow.ui
 
