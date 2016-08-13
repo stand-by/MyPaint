@@ -4,10 +4,11 @@
 #include "abstractdrawingtool.h"
 
 class PencilDrawingTool: public AbstractDrawingTool {
-    Q_OBJECT
 protected:
     QPoint oldPos;
     QPoint newPos;
+public:
+    explicit PencilDrawingTool(QObject *parent = 0);
 public slots:
     void mousePress_reciever(QMouseEvent *event);
     void mouseMove_reciever(QMouseEvent *event);

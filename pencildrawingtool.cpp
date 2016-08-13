@@ -1,5 +1,7 @@
 #include "pencildrawingtool.h"
 
+PencilDrawingTool::PencilDrawingTool(QObject *parent): AbstractDrawingTool(parent) {}
+
 void PencilDrawingTool::mousePress_reciever(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {
         canDraw = true;
