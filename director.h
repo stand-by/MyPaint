@@ -8,6 +8,7 @@
 #include "pencildrawingtool.h"
 #include "linedrawingtool.h"
 #include "rectangledrawingtool.h"
+#include "ellipsedrawingtool.h"
 
 class Director: public QObject {
     Q_OBJECT
