@@ -18,14 +18,16 @@ SOURCES += main.cpp\
     director.cpp \
     pencil.cpp \
     line.cpp \
-    rectangle.cpp
+    rectangle.cpp \
+    ellipse.cpp
 
 HEADERS  += mainwindow.h \
     view.h \
     director.h \
     pencil.h \
     line.h \
-    rectangle.h
+    rectangle.h \
+    ellipse.h
 
 FORMS    += mainwindow.ui
 
