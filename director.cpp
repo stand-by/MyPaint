@@ -8,7 +8,7 @@ Director::Director(QObject *parent): QObject(parent) {
     view->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     scene->setSceneRect(-1.25, -1.25, 2.5, 2.5);
 
-
+    view->setScene(scene);
 }
 
 Director::~Director() {
