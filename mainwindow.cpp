@@ -4,6 +4,9 @@
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
     director = new Director(this);
+
+    this->setWindowTitle("MyPaint");
+    this->setCentralWidget(director->view);
 }
 
 MainWindow::~MainWindow() {
