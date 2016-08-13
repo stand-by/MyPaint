@@ -12,7 +12,7 @@ private:
     View *view;
     QGraphicsScene *scene;
 public:
-    Director();
+    explicit Director(QObject *parent = 0);
     ~Director();
 };
 

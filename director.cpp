@@ -1,6 +1,6 @@
 #include "director.h"
 
-Director::Director() {
+Director::Director(QObject *parent): QObject(parent) {
     scene = new QGraphicsScene(this);
     view = new View;
 }

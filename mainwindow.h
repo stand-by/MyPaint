@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QtCore>
 #include <QtGui>
+#include "director.h"
 
 namespace Ui {
     class MainWindow;
@@ -18,6 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Director *director;
 };
 
 #endif // MAINWINDOW_H
