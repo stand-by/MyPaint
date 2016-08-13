@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
     this->setWindowTitle("MyPaint");
     this->setCentralWidget(director->view);
+
+    //this->setCursor(QCursor(QPixmap(":/icons/Ellipse\ Stroked-48.png")));
 }
 
 MainWindow::~MainWindow() {

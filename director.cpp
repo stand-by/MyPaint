@@ -22,11 +22,12 @@ Director::Director(QObject *parent): QObject(parent) {
 }
 
 Director::~Director() {
-    delete view;
-    delete scene;
     delete pencil;
     delete line;
     delete rectangle;
     delete ellipse;
+
+    delete view;
+    delete scene;
 }
 
