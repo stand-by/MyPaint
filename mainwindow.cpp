@@ -12,6 +12,6 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 }
 
 MainWindow::~MainWindow() {
-    delete ui;
     delete director;
+    delete ui;
 }

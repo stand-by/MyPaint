@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>564</width>
-    <height>346</height>
+    <width>662</width>
+    <height>473</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>564</width>
+     <width>662</width>
      <height>23</height>
     </rect>
    </property>
@@ -39,6 +39,8 @@
     <property name="title">
      <string>Tools</string>
     </property>
+    <addaction name="actionCursor"/>
+    <addaction name="separator"/>
     <addaction name="actionPencil"/>
     <addaction name="actionLine"/>
     <addaction name="separator"/>
@@ -48,8 +50,16 @@
     <addaction name="actionEllipse"/>
     <addaction name="actionFilled_Ellipse"/>
    </widget>
+   <widget class="QMenu" name="menuCustomize">
+    <property name="title">
+     <string>Customize</string>
+    </property>
+    <addaction name="actionColor_Picker"/>
+    <addaction name="actionEraser"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuTools"/>
+   <addaction name="menuCustomize"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <property name="movable">
@@ -67,6 +77,8 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionCursor"/>
+   <addaction name="separator"/>
    <addaction name="actionPencil"/>
    <addaction name="actionLine"/>
    <addaction name="separator"/>
@@ -75,8 +87,10 @@
    <addaction name="separator"/>
    <addaction name="actionEllipse"/>
    <addaction name="actionFilled_Ellipse"/>
+   <addaction name="separator"/>
+   <addaction name="actionColor_Picker"/>
+   <addaction name="actionEraser"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen">
    <property name="icon">
     <iconset resource="icons/icons.qrc">
@@ -165,6 +179,33 @@
    </property>
    <property name="text">
     <string>Filled Ellipse</string>
+   </property>
+  </action>
+  <action name="actionCursor">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Cursor-48.png</normaloff>:/icons/Cursor-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cursor</string>
+   </property>
+  </action>
+  <action name="actionColor_Picker">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Color Dropper-48.png</normaloff>:/icons/Color Dropper-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color Picker</string>
+   </property>
+  </action>
+  <action name="actionEraser">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Delete-48.png</normaloff>:/icons/Delete-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eraser</string>
    </property>
   </action>
  </widget>

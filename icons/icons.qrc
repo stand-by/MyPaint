@@ -12,5 +12,10 @@
         <file>Ellipse-48.png</file>
         <file>Create New-48.png</file>
         <file>Add File-48.png</file>
+        <file>Up Squared-48.png</file>
+        <file>Down Squared-48.png</file>
+        <file>Delete-48.png</file>
+        <file>Cursor-48.png</file>
+        <file>Color Dropper-48.png</file>
     </qresource>
 </RCC>
