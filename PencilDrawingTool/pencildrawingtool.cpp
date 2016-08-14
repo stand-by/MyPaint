@@ -1,6 +1,9 @@
 #include "pencildrawingtool.h"
 
-PencilDrawingTool::PencilDrawingTool(QObject *parent): AbstractDrawingTool(parent) {}
+PencilDrawingTool::PencilDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
+    pen.setCapStyle(Qt::RoundCap);
+    pen.setJoinStyle(Qt::RoundJoin);
+}
 
 void PencilDrawingTool::mousePress_reciever(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {
