@@ -11,6 +11,7 @@
 #include "ellipsedrawingtool.h"
 #include "filledrectangledrawingtool.h"
 #include "filledellipsedrawingtool.h"
+#include "erasertool.h"
 
 class Director: public QObject {
     Q_OBJECT
@@ -30,6 +31,7 @@ public:
     void setFilledRectangleTool();
     void setEllipseTool();
     void setFilledEllipseTool();
+    void setEraseTool();
     //set MainWindow as a friend of Director because of private members access necessity in MainWindow constructor
     friend class MainWindow;
 };

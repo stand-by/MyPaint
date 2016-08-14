@@ -52,3 +52,9 @@ void Director::setFilledEllipseTool() {
     tool = new FilledEllipseDrawingTool(this);
     tool->bindSceneAndView(scene, view);
 }
+
+void Director::setEraseTool() {
+    if(tool != NULL) delete tool;
+    tool = new EraserTool(this);
+    tool->bindSceneAndView(scene, view);
+}
