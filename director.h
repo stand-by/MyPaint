@@ -2,6 +2,7 @@
 #define DIRECTOR_H
 
 #include <QObject>
+#include <QImage>
 #include <QGraphicsScene>
 #include "view.h"
 #include "abstractdrawingtool.h"
@@ -28,6 +29,7 @@ public:
     void setToolColor(QColor color);
     void increaseToolWidth();
     void decreaseToolWidth();
+
     void setCursorTool();
     void setPencilTool();
     void setLineTool();
@@ -36,6 +38,7 @@ public:
     void setEllipseTool();
     void setFilledEllipseTool();
     void setEraseTool();
+    QPixmap getSceneImage();
     //set MainWindow as a friend of Director because of private members access necessity in MainWindow constructor
     friend class MainWindow;
 };

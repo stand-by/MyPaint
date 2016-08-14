@@ -77,3 +77,8 @@ void Director::setEraseTool() {
     tool = new EraserTool(this);
     tool->bindSceneAndView(scene, view);
 }
+
+QPixmap Director::getSceneImage() {
+    QPixmap pixMap = view->grab();
+    return pixMap;
+}
