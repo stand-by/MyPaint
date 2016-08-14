@@ -26,6 +26,8 @@ public:
     explicit Director(QObject *parent = 0);
     ~Director();
     void setToolColor(QColor color);
+    void increaseToolWidth();
+    void decreaseToolWidth();
     void setCursorTool();
     void setPencilTool();
     void setLineTool();

@@ -26,6 +26,9 @@ private slots:
     void on_actionFilled_Ellipse_triggered();
     void on_actionColor_Picker_triggered();
     void on_actionEraser_triggered();
+    void on_actionThinner_triggered();
+    void on_actionThicker_triggered();
+
 private:
     Ui::MainWindow *ui;
     Director *director;
