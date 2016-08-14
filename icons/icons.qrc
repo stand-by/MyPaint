@@ -1,29 +1,25 @@
 <RCC>
     <qresource prefix="/icons">
         <file>Save as-48.png</file>
-        <file>Save-48.png</file>
         <file>Rectangle Stroked-48.png</file>
         <file>Rectangle-48.png</file>
         <file>Pencil-48.png</file>
         <file>Line-48.png</file>
         <file>icons.qrc</file>
-        <file>Eraser-48.png</file>
         <file>Ellipse Stroked-48.png</file>
         <file>Ellipse-48.png</file>
         <file>Create New-48.png</file>
-        <file>Add File-48.png</file>
         <file>Up Squared-48.png</file>
         <file>Down Squared-48.png</file>
         <file>Delete-48.png</file>
-        <file>Cursor-48.png</file>
         <file>Color Dropper-48.png</file>
         <file>Rectangle-24.png</file>
         <file>Pencil-24.png</file>
         <file>Line-24.png</file>
-        <file>Eraser-24.png</file>
         <file>Ellipse-24.png</file>
         <file>Delete-24.png</file>
         <file>RectangleStroked-24.png</file>
         <file>EllipseStroked-24.png</file>
+        <file>Cursor-48.png</file>
     </qresource>
 </RCC>
