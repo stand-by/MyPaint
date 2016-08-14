@@ -21,6 +21,7 @@ Director::~Director() {
 
 void Director::setToolColor(QColor color) {
     toolColor = color;
+    tool->setPenColor(toolColor);
 }
 
 void Director::setCursorTool() {
