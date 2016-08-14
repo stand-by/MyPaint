@@ -56,7 +56,7 @@
     </property>
     <addaction name="actionColor_Picker"/>
     <addaction name="actionEraser"/>
-    <addaction name="action_1_width"/>
+    <addaction name="actionThicker"/>
     <addaction name="actionThinner"/>
    </widget>
    <addaction name="menuFile"/>
@@ -92,7 +92,7 @@
    <addaction name="separator"/>
    <addaction name="actionColor_Picker"/>
    <addaction name="actionEraser"/>
-   <addaction name="action_1_width"/>
+   <addaction name="actionThicker"/>
    <addaction name="actionThinner"/>
   </widget>
   <action name="actionOpen">
@@ -132,6 +132,9 @@
    </property>
   </action>
   <action name="actionPencil">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
    <property name="icon">
     <iconset resource="icons/icons.qrc">
      <normaloff>:/icons/Pencil-48.png</normaloff>:/icons/Pencil-48.png</iconset>
@@ -212,7 +215,25 @@
     <string>Cursor</string>
    </property>
   </action>
-  <action name="action_1_width">
+  <action name="actionThinner">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Down Squared-48.png</normaloff>:/icons/Down Squared-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thinner</string>
+   </property>
+   <property name="toolTip">
+    <string>Thinner (-1 width)</string>
+   </property>
+   <property name="statusTip">
+    <string extracomment="-1 width"/>
+   </property>
+  </action>
+  <action name="actionThicker">
    <property name="icon">
     <iconset resource="icons/icons.qrc">
      <normaloff>:/icons/Up Squared-48.png</normaloff>:/icons/Up Squared-48.png</iconset>
@@ -220,14 +241,11 @@
    <property name="text">
     <string>Thicker</string>
    </property>
-  </action>
-  <action name="actionThinner">
-   <property name="icon">
-    <iconset resource="icons/icons.qrc">
-     <normaloff>:/icons/Down Squared-48.png</normaloff>:/icons/Down Squared-48.png</iconset>
+   <property name="toolTip">
+    <string extracomment="+1 width">Thicker (+1 width)</string>
    </property>
-   <property name="text">
-    <string>Thinner</string>
+   <property name="statusTip">
+    <string extracomment="+1 width"/>
    </property>
   </action>
  </widget>
