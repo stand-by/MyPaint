@@ -15,3 +15,28 @@ MainWindow::~MainWindow() {
     delete director;
     delete ui;
 }
+
+void MainWindow::on_actionCursor_triggered() {
+
+}
+void MainWindow::on_actionPencil_triggered() {
+
+}
+void MainWindow::on_actionLine_triggered() {
+
+}
+void MainWindow::on_actionRectangle_triggered() {
+
+}
+void MainWindow::on_actionFilled_Rectangle_triggered() {
+
+}
+void MainWindow::on_actionEllipse_triggered() {
+
+}
+void MainWindow::on_actionColor_Picker_triggered() {
+
+}
+void MainWindow::on_actionEraser_triggered() {
+
+}
