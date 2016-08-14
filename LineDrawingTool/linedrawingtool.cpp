@@ -2,6 +2,8 @@
 
 LineDrawingTool::LineDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
     lastLine = NULL;
+    pen.setCapStyle(Qt::RoundCap);
+    pen.setJoinStyle(Qt::RoundJoin);
 }
 
 void LineDrawingTool::mousePress_reciever(QMouseEvent *event) {
