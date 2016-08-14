@@ -22,6 +22,7 @@ private slots:
     void on_actionRectangle_triggered();
     void on_actionFilled_Rectangle_triggered();
     void on_actionEllipse_triggered();
+    void on_actionFilled_Ellipse_triggered();
     void on_actionColor_Picker_triggered();
     void on_actionEraser_triggered();
 private:
