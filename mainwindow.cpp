@@ -46,5 +46,6 @@ void MainWindow::on_actionColor_Picker_triggered() {
 
 }
 void MainWindow::on_actionEraser_triggered() {
-
+    this->setCursor(QCursor(QPixmap(":/icons/Delete-24.png")));
+    director->setEraseTool();
 }
