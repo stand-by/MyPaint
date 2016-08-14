@@ -2,6 +2,8 @@
 
 RectangleDrawingTool::RectangleDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
     lastRectangle = NULL;
+    pen.setCapStyle(Qt::SquareCap);
+    pen.setJoinStyle(Qt::MiterJoin);
 }
 
 void RectangleDrawingTool::mousePress_reciever(QMouseEvent *event) {
