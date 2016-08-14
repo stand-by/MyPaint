@@ -2,9 +2,7 @@
 #define VIEW_H
 
 #include <QObject>
-#include <QGraphicsScene>
 #include <QGraphicsView>
-#include <QGraphicsItem>
 
 class View : public QGraphicsView {
     Q_OBJECT
