@@ -22,6 +22,7 @@ public:
     void bindSceneAndView(QGraphicsScene *s, View *v);
     void setPenColor(QColor color);
     void setPenWidth(int width);
+    int getPenWidth();
 public slots:
     virtual void mousePress_reciever(QMouseEvent *event) = 0;
     virtual void mouseMove_reciever(QMouseEvent *event) = 0;

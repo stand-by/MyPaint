@@ -22,6 +22,9 @@ void AbstractDrawingTool::setPenColor(QColor color) {
 void AbstractDrawingTool::setPenWidth(int width) {
     pen.setWidth(width);
 }
+int AbstractDrawingTool::getPenWidth(){
+    return pen.width();
+}
 
 void AbstractDrawingTool::bindSceneAndView(QGraphicsScene *s, View *v) {
     scene = s;
