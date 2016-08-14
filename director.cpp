@@ -26,31 +26,37 @@ void Director::setCursorTool() {
 void Director::setPencilTool() {
     if(tool != NULL) delete tool;
     tool = new PencilDrawingTool(this);
+    tool->setPenColor(toolColor);
     tool->bindSceneAndView(scene, view);
 }
 void Director::setLineTool() {
     if(tool != NULL) delete tool;
     tool = new LineDrawingTool(this);
+    tool->setPenColor(toolColor);
     tool->bindSceneAndView(scene, view);
 }
 void Director::setRectangleTool() {
     if(tool != NULL) delete tool;
     tool = new RectangleDrawingTool(this);
+    tool->setPenColor(toolColor);
     tool->bindSceneAndView(scene, view);
 }
 void Director::setFilledRectangleTool() {
     if(tool != NULL) delete tool;
     tool = new FilledRectangleDrawingTool(this);
+    tool->setPenColor(toolColor);
     tool->bindSceneAndView(scene, view);
 }
 void Director::setEllipseTool() {
     if(tool != NULL) delete tool;
     tool = new EllipseDrawingTool(this);
+    tool->setPenColor(toolColor);
     tool->bindSceneAndView(scene, view);
 }
 void Director::setFilledEllipseTool() {
     if(tool != NULL) delete tool;
     tool = new FilledEllipseDrawingTool(this);
+    tool->setPenColor(toolColor);
     tool->bindSceneAndView(scene, view);
 }
 
