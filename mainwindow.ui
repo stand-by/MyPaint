@@ -181,15 +181,6 @@
     <string>Filled Ellipse</string>
    </property>
   </action>
-  <action name="actionCursor">
-   <property name="icon">
-    <iconset resource="icons/icons.qrc">
-     <normaloff>:/icons/Cursor-48.png</normaloff>:/icons/Cursor-48.png</iconset>
-   </property>
-   <property name="text">
-    <string>Cursor</string>
-   </property>
-  </action>
   <action name="actionColor_Picker">
    <property name="icon">
     <iconset resource="icons/icons.qrc">
@@ -206,6 +197,15 @@
    </property>
    <property name="text">
     <string>Eraser</string>
+   </property>
+  </action>
+  <action name="actionCursor">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Cursor-48.png</normaloff>:/icons/Cursor-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cursor</string>
    </property>
   </action>
  </widget>
