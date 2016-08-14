@@ -49,9 +49,12 @@ void Director::setFilledRectangleTool() {
     tool->bindSceneAndView(scene, view);
 }
 void Director::setEllipseTool() {
-
+    if(tool != NULL) delete tool;
+    tool = new EllipseDrawingTool(this);
+    tool->bindSceneAndView(scene, view);
 }
 void Director::setFilledEllipseTool() {
-
+    if(tool != NULL) delete tool;
+    tool = new FilledEllipseDrawingTool(this);
+    tool->bindSceneAndView(scene, view);
 }
-
