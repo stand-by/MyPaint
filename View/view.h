@@ -4,9 +4,8 @@
 #include <QObject>
 #include <QGraphicsView>
 
-class View : public QGraphicsView {
+class View: public QGraphicsView {
     Q_OBJECT
-
 public:
     explicit View(QWidget *parent = 0);
 protected:

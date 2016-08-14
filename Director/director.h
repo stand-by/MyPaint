@@ -16,20 +16,18 @@
 
 class Director: public QObject {
     Q_OBJECT
-
 private:
     View *view;
     QGraphicsScene *scene;
-    //instance for tool
     AbstractDrawingTool *tool;
     QColor toolColor;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
-    void setToolColor(QColor color);
+    void setToolColor(const QColor &color);
     void increaseToolWidth();
     void decreaseToolWidth();
-
+    void clearScene();
     void setCursorTool();
     void setPencilTool();
     void setLineTool();
@@ -38,7 +36,7 @@ public:
     void setEllipseTool();
     void setFilledEllipseTool();
     void setEraseTool();
-    QPixmap getSceneImage();
+    QPixmap getSceneImage() const;
     //set MainWindow as a friend of Director because of private members access necessity in MainWindow constructor
     friend class MainWindow;
 };

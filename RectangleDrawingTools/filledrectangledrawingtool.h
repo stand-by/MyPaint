@@ -3,7 +3,7 @@
 
 #include "rectangledrawingtool.h"
 
-class FilledRectangleDrawingTool : public RectangleDrawingTool {
+class FilledRectangleDrawingTool: public RectangleDrawingTool {
 public:
     explicit FilledRectangleDrawingTool(QObject *parent = 0);
     void mouseMove_reciever(QMouseEvent *event);

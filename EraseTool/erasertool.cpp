@@ -2,14 +2,15 @@
 #include <math.h>
 
 EraserTool::EraserTool(QObject *parent): AbstractDrawingTool(parent) {
+    canErase = false;
     itemToErase = NULL;
 }
 
 void EraserTool::mousePress_reciever(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {
-        canDraw = true;
+        canErase = true;
         startPos = event->pos();
-        itemToErase = scene->itemAt(event->pos(), view->transform());
+        itemToErase = scene->itemAt(startPos, view->transform());
         if(itemToErase != 0) {
             scene->removeItem(itemToErase);
             delete itemToErase;
@@ -17,9 +18,9 @@ void EraserTool::mousePress_reciever(QMouseEvent *event) {
     }
 }
 void EraserTool::mouseMove_reciever(QMouseEvent *event) {
-    if (canDraw){
+    if (canErase){
         lastPos = event->pos();
-        itemToErase = scene->itemAt(event->pos(), view->transform());
+        itemToErase = scene->itemAt(lastPos, view->transform());
         if(itemToErase != 0 && sqrt(pow((startPos.x() - lastPos.x()),2) + pow((startPos.y() - lastPos.y()),2)) > 5) {
             scene->removeItem(itemToErase);
             delete itemToErase;
@@ -27,6 +28,6 @@ void EraserTool::mouseMove_reciever(QMouseEvent *event) {
     }
 }
 void EraserTool::mouseRelease_reciever(QMouseEvent *event) {
-    if (event->button() == Qt::LeftButton) canDraw = false;
+    if (event->button() == Qt::LeftButton) canErase = false;
     itemToErase = NULL;
 }

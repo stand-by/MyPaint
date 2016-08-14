@@ -3,8 +3,9 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
-class EraserTool : public AbstractDrawingTool {
+class EraserTool: public AbstractDrawingTool {
 protected:
+    bool canErase;
     QPoint startPos;
     QPoint lastPos;
     QGraphicsItem *itemToErase;

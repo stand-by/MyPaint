@@ -9,7 +9,7 @@
 #include <QGraphicsItem>
 #include "View/view.h"
 
-class AbstractDrawingTool : public QObject {
+class AbstractDrawingTool: public QObject {
     Q_OBJECT
 protected:
     bool canDraw;
@@ -20,9 +20,9 @@ public:
     explicit AbstractDrawingTool(QObject *parent = 0);
     ~AbstractDrawingTool();
     void bindSceneAndView(QGraphicsScene *s, View *v);
-    void setPenColor(QColor color);
-    void setPenWidth(int width);
-    int getPenWidth();
+    void setPenColor(const QColor &color);
+    void setPenWidth(const int &width);
+    int getPenWidth() const;
 public slots:
     virtual void mousePress_reciever(QMouseEvent *event) = 0;
     virtual void mouseMove_reciever(QMouseEvent *event) = 0;

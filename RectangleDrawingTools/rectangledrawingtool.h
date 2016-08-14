@@ -3,7 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
-class RectangleDrawingTool : public AbstractDrawingTool {
+class RectangleDrawingTool: public AbstractDrawingTool {
 protected:
     QPoint startPos;
     QPoint lastPos;

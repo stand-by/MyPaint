@@ -9,17 +9,16 @@ Director::Director(QObject *parent): QObject(parent) {
     //synchronize scene's and view's coordinate systems
     view->setAlignment(Qt::AlignLeft | Qt::AlignTop);
     scene->setSceneRect(-1.25, -1.25, 2.5, 2.5);
-
+    //bind model and view
     view->setScene(scene);
 }
 Director::~Director() {
     delete tool;
-
     delete view;
     delete scene;
 }
 
-void Director::setToolColor(QColor color) {
+void Director::setToolColor(const QColor &color) {
     toolColor = color;
     if(tool != NULL) tool->setPenColor(toolColor);
 }
@@ -29,6 +28,10 @@ void Director::increaseToolWidth() {
 }
 void Director::decreaseToolWidth() {
     if(tool != NULL && tool->getPenWidth() > 1) tool->setPenWidth(tool->getPenWidth()-1);
+}
+
+void Director::clearScene() {
+    scene->clear();
 }
 
 void Director::setCursorTool() {
@@ -78,7 +81,7 @@ void Director::setEraseTool() {
     tool->bindSceneAndView(scene, view);
 }
 
-QPixmap Director::getSceneImage() {
+QPixmap Director::getSceneImage() const {
     QPixmap pixMap = view->grab();
     return pixMap;
 }

@@ -3,7 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
-class EllipseDrawingTool : public AbstractDrawingTool {
+class EllipseDrawingTool: public AbstractDrawingTool {
 protected:
     QPoint startPos;
     QPoint lastPos;

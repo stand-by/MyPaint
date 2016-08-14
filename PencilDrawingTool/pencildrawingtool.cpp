@@ -15,7 +15,7 @@ void PencilDrawingTool::mousePress_reciever(QMouseEvent *event) {
 void PencilDrawingTool::mouseMove_reciever(QMouseEvent *event) {
     if (canDraw){
         newPos = event->pos();
-        scene->addLine(QLine(oldPos, newPos), pen);
+        scene->addLine(QLine(oldPos, newPos),pen);
         oldPos = newPos;
      }
 }

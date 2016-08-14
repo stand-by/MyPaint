@@ -5,10 +5,9 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     ui->setupUi(this);
     director = new Director(this);
 
-    this->setWindowTitle("MyPaint");
+    this->setWindowTitle("My Paint");
     this->setCentralWidget(director->view);
 }
-
 MainWindow::~MainWindow() {
     delete director;
     delete ui;
@@ -60,13 +59,13 @@ void MainWindow::on_actionThinner_triggered() {
 }
 
 void MainWindow::on_actionNew_triggered() {
-    director->scene->clear();
+    director->clearScene();
 }
 void MainWindow::on_actionSave_As_triggered() {
     QPixmap imageToSave = director->getSceneImage();
     QString filename = QFileDialog::getSaveFileName(this, "Save image", QCoreApplication::applicationDirPath(), "JPEG (*.JPEG);;PNG (*.png)" );
     if(!filename.isEmpty()) {
-        if(!filename.contains(".png") && !filename.contains(".jpg")) filename += ".png";
+        if(!filename.contains(".png") && !filename.contains(".jpg") && !filename.contains(".jpeg")) filename += ".png";
         imageToSave.save(filename);
     }
 }
