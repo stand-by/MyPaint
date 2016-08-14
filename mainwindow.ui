@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>662</width>
-    <height>473</height>
+    <width>818</width>
+    <height>569</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,7 +21,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>662</width>
+     <width>818</width>
      <height>23</height>
     </rect>
    </property>
@@ -56,6 +56,8 @@
     </property>
     <addaction name="actionColor_Picker"/>
     <addaction name="actionEraser"/>
+    <addaction name="action_1_width"/>
+    <addaction name="actionThinner"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuTools"/>
@@ -90,6 +92,8 @@
    <addaction name="separator"/>
    <addaction name="actionColor_Picker"/>
    <addaction name="actionEraser"/>
+   <addaction name="action_1_width"/>
+   <addaction name="actionThinner"/>
   </widget>
   <action name="actionOpen">
    <property name="icon">
@@ -206,6 +210,24 @@
    </property>
    <property name="text">
     <string>Cursor</string>
+   </property>
+  </action>
+  <action name="action_1_width">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Up Squared-48.png</normaloff>:/icons/Up Squared-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thicker</string>
+   </property>
+  </action>
+  <action name="actionThinner">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/icons/Down Squared-48.png</normaloff>:/icons/Down Squared-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>Thinner</string>
    </property>
   </action>
  </widget>
