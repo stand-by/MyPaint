@@ -10,13 +10,6 @@ Director::Director(QObject *parent): QObject(parent) {
     scene->setSceneRect(-1.25, -1.25, 2.5, 2.5);
 
     view->setScene(scene);
-    this->setCursorTool();
-
-    //tool->bindSceneAndView(scene, view);
-    //rectangle->bindSceneAndView(scene, view);
-    //line->bindSceneAndView(scene, view);
-    //pencil->bindSceneAndView(scene, view);
-    //???scene->addItem(pencil->getGraphicsItem());???
 }
 Director::~Director() {
     delete tool;

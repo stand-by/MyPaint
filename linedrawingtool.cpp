@@ -1,6 +1,8 @@
 #include "linedrawingtool.h"
 
-LineDrawingTool::LineDrawingTool(QObject *parent): AbstractDrawingTool(parent) {}
+LineDrawingTool::LineDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
+    lastLine = NULL;
+}
 
 void LineDrawingTool::mousePress_reciever(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {

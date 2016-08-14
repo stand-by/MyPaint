@@ -1,6 +1,8 @@
 #include "ellipsedrawingtool.h"
 
-EllipseDrawingTool::EllipseDrawingTool(QObject *parent): AbstractDrawingTool(parent) {}
+EllipseDrawingTool::EllipseDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
+    lastEllipse = NULL;
+}
 
 void EllipseDrawingTool::mousePress_reciever(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {

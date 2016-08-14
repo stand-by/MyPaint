@@ -1,6 +1,8 @@
 #include "rectangledrawingtool.h"
 
-RectangleDrawingTool::RectangleDrawingTool(QObject *parent): AbstractDrawingTool(parent) {}
+RectangleDrawingTool::RectangleDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
+    lastRectangle = NULL;
+}
 
 void RectangleDrawingTool::mousePress_reciever(QMouseEvent *event) {
     if (event->button() == Qt::LeftButton) {
