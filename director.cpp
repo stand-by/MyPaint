@@ -17,11 +17,32 @@ Director::Director(QObject *parent): QObject(parent) {
     //pencil->bindSceneAndView(scene, view);
     //???scene->addItem(pencil->getGraphicsItem());???
 }
-
 Director::~Director() {
     delete tool;
 
     delete view;
     delete scene;
+}
+
+void Director::setCursorTool() {
+
+}
+void Director::setPencilTool() {
+
+}
+void Director::setLineTool() {
+
+}
+void Director::setRectangleTool() {
+
+}
+void Director::setFilledRectangleTool() {
+
+}
+void Director::setEllipseTool() {
+
+}
+void Director::setFilledEllipseTool() {
+
 }
 

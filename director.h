@@ -23,7 +23,13 @@ private:
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
-
+    void setCursorTool();
+    void setPencilTool();
+    void setLineTool();
+    void setRectangleTool();
+    void setFilledRectangleTool();
+    void setEllipseTool();
+    void setFilledEllipseTool();
     //set MainWindow as a friend of Director because of private members access necessity in MainWindow constructor
     friend class MainWindow;
 };
