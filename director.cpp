@@ -2,6 +2,7 @@
 
 Director::Director(QObject *parent): QObject(parent) {
     tool = NULL;
+    toolColor = Qt::black;
     view = new View;
     scene = new QGraphicsScene(this);
 

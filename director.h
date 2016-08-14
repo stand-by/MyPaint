@@ -21,6 +21,7 @@ private:
     QGraphicsScene *scene;
     //instance for tool
     AbstractDrawingTool *tool;
+    QColor toolColor;
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
