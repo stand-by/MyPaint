@@ -25,6 +25,7 @@ private:
 public:
     explicit Director(QObject *parent = 0);
     ~Director();
+    void setToolColor(QColor color);
     void setCursorTool();
     void setPencilTool();
     void setLineTool();

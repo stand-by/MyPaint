@@ -19,6 +19,10 @@ Director::~Director() {
     delete scene;
 }
 
+void Director::setToolColor(QColor color) {
+    toolColor = color;
+}
+
 void Director::setCursorTool() {
     if(tool != NULL) delete tool;
     tool = NULL;
