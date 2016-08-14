@@ -1,7 +1,7 @@
 #ifndef RECTANGLEDRAWINGTOOL_H
 #define RECTANGLEDRAWINGTOOL_H
 
-#include "abstractdrawingtool.h"
+#include "AbstractDrawingTool/abstractdrawingtool.h"
 
 class RectangleDrawingTool : public AbstractDrawingTool {
 protected:

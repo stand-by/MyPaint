@@ -1,7 +1,7 @@
 #ifndef LINEDRAWINGTOOL_H
 #define LINEDRAWINGTOOL_H
 
-#include "abstractdrawingtool.h"
+#include "AbstractDrawingTool/abstractdrawingtool.h"
 
 class LineDrawingTool : public AbstractDrawingTool {
 protected:

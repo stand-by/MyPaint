@@ -7,7 +7,7 @@
 #include <QMouseEvent>
 #include <QGraphicsScene>
 #include <QGraphicsItem>
-#include "view.h"
+#include "View/view.h"
 
 class AbstractDrawingTool : public QObject {
     Q_OBJECT

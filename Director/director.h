@@ -4,15 +4,15 @@
 #include <QObject>
 #include <QImage>
 #include <QGraphicsScene>
-#include "view.h"
-#include "abstractdrawingtool.h"
-#include "pencildrawingtool.h"
-#include "linedrawingtool.h"
-#include "rectangledrawingtool.h"
-#include "ellipsedrawingtool.h"
-#include "filledrectangledrawingtool.h"
-#include "filledellipsedrawingtool.h"
-#include "erasertool.h"
+#include "View/view.h"
+#include "AbstractDrawingTool/abstractdrawingtool.h"
+#include "PencilDrawingTool/pencildrawingtool.h"
+#include "LineDrawingTool/linedrawingtool.h"
+#include "RectangleDrawingTools/rectangledrawingtool.h"
+#include "EllipseDrawingTools/ellipsedrawingtool.h"
+#include "RectangleDrawingTools/filledrectangledrawingtool.h"
+#include "EllipseDrawingTools/filledellipsedrawingtool.h"
+#include "EraseTool/erasertool.h"
 
 class Director: public QObject {
     Q_OBJECT

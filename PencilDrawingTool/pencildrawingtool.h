@@ -1,7 +1,7 @@
 #ifndef PENCILDRAWINGTOOL_H
 #define PENCILDRAWINGTOOL_H
 
-#include "abstractdrawingtool.h"
+#include "AbstractDrawingTool/abstractdrawingtool.h"
 
 class PencilDrawingTool: public AbstractDrawingTool {
 protected:

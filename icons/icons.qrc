@@ -17,13 +17,13 @@
         <file>Delete-48.png</file>
         <file>Cursor-48.png</file>
         <file>Color Dropper-48.png</file>
-        <file>Rectangle Stroked-24.png</file>
         <file>Rectangle-24.png</file>
         <file>Pencil-24.png</file>
         <file>Line-24.png</file>
         <file>Eraser-24.png</file>
-        <file>Ellipse Stroked-24.png</file>
         <file>Ellipse-24.png</file>
         <file>Delete-24.png</file>
+        <file>RectangleStroked-24.png</file>
+        <file>EllipseStroked-24.png</file>
     </qresource>
 </RCC>

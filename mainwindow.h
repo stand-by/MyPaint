@@ -6,7 +6,7 @@
 #include <QtGui>
 #include <QColorDialog>
 #include <QFileDialog>
-#include "director.h"
+#include "Director/director.h"
 
 namespace Ui {
     class MainWindow;
@@ -31,7 +31,6 @@ private slots:
     void on_actionThicker_triggered();
     void on_actionSave_As_triggered();
     void on_actionNew_triggered();
-
 private:
     Ui::MainWindow *ui;
     Director *director;

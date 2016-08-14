@@ -1,7 +1,7 @@
 #ifndef ELLIPSEDRAWINGTOOL_H
 #define ELLIPSEDRAWINGTOOL_H
 
-#include "abstractdrawingtool.h"
+#include "AbstractDrawingTool/abstractdrawingtool.h"
 
 class EllipseDrawingTool : public AbstractDrawingTool {
 protected:

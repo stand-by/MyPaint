@@ -15,28 +15,28 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    view.cpp \
-    director.cpp \
-    abstractdrawingtool.cpp \
-    pencildrawingtool.cpp \
-    linedrawingtool.cpp \
-    rectangledrawingtool.cpp \
-    ellipsedrawingtool.cpp \
-    filledrectangledrawingtool.cpp \
-    filledellipsedrawingtool.cpp \
-    erasertool.cpp
+    AbstractDrawingTool/abstractdrawingtool.cpp \
+    Director/director.cpp \
+    EllipseDrawingTools/ellipsedrawingtool.cpp \
+    EllipseDrawingTools/filledellipsedrawingtool.cpp \
+    EraseTool/erasertool.cpp \
+    LineDrawingTool/linedrawingtool.cpp \
+    PencilDrawingTool/pencildrawingtool.cpp \
+    RectangleDrawingTools/filledrectangledrawingtool.cpp \
+    RectangleDrawingTools/rectangledrawingtool.cpp \
+    View/view.cpp
 
 HEADERS  += mainwindow.h \
-    view.h \
-    director.h \
-    abstractdrawingtool.h \
-    pencildrawingtool.h \
-    linedrawingtool.h \
-    rectangledrawingtool.h \
-    ellipsedrawingtool.h \
-    filledrectangledrawingtool.h \
-    filledellipsedrawingtool.h \
-    erasertool.h
+    AbstractDrawingTool/abstractdrawingtool.h \
+    Director/director.h \
+    EllipseDrawingTools/ellipsedrawingtool.h \
+    EllipseDrawingTools/filledellipsedrawingtool.h \
+    EraseTool/erasertool.h \
+    LineDrawingTool/linedrawingtool.h \
+    PencilDrawingTool/pencildrawingtool.h \
+    RectangleDrawingTools/filledrectangledrawingtool.h \
+    RectangleDrawingTools/rectangledrawingtool.h \
+    View/view.h
 
 FORMS    += mainwindow.ui
 

@@ -27,7 +27,7 @@ void MainWindow::on_actionLine_triggered() {
     director->setLineTool();
 }
 void MainWindow::on_actionRectangle_triggered() {
-    this->setCursor(QCursor(QPixmap(":/icons/Rectangle\ Stroked-24.png")));
+    this->setCursor(QCursor(QPixmap(":/icons/RectangleStroked-24.png")));
     director->setRectangleTool();
 }
 void MainWindow::on_actionFilled_Rectangle_triggered() {
@@ -35,7 +35,7 @@ void MainWindow::on_actionFilled_Rectangle_triggered() {
     director->setFilledRectangleTool();
 }
 void MainWindow::on_actionEllipse_triggered() {
-    this->setCursor(QCursor(QPixmap(":/icons/Ellipse\ Stroked-24.png")));
+    this->setCursor(QCursor(QPixmap(":/icons/EllipseStroked-24.png")));
     director->setEllipseTool();
 }
 void MainWindow::on_actionFilled_Ellipse_triggered() {

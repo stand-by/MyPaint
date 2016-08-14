@@ -1,7 +1,7 @@
 #ifndef ERASERTOOL_H
 #define ERASERTOOL_H
 
-#include "abstractdrawingtool.h"
+#include "AbstractDrawingTool/abstractdrawingtool.h"
 
 class EraserTool : public AbstractDrawingTool {
 protected:
