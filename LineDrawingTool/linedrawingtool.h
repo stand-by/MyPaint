@@ -3,6 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
+//this class represents tool for line creating
 class LineDrawingTool: public AbstractDrawingTool {
 protected:
     QPoint startPos;

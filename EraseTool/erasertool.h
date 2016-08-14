@@ -3,6 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
+//this class represents tool for erasing items from scene
 class EraserTool: public AbstractDrawingTool {
 protected:
     bool canErase;

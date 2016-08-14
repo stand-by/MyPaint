@@ -3,6 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
+//this class represents pencil tool
 class PencilDrawingTool: public AbstractDrawingTool {
 protected:
     QPoint oldPos;

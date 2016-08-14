@@ -3,6 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
+//this class represents tool for ellipse creating
 class EllipseDrawingTool: public AbstractDrawingTool {
 protected:
     QPoint startPos;

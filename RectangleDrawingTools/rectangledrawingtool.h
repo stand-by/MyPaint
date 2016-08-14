@@ -3,6 +3,7 @@
 
 #include "AbstractDrawingTool/abstractdrawingtool.h"
 
+//this class represents tool for rectangle creating
 class RectangleDrawingTool: public AbstractDrawingTool {
 protected:
     QPoint startPos;
