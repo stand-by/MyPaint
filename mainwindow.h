@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QtCore>
 #include <QtGui>
+#include <QColorDialog>
 #include "director.h"
 
 namespace Ui {

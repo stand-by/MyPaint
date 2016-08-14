@@ -43,7 +43,8 @@ void MainWindow::on_actionFilled_Ellipse_triggered() {
     director->setFilledEllipseTool();
 }
 void MainWindow::on_actionColor_Picker_triggered() {
-
+    QColor color = QColorDialog::getColor(Qt::black, this, "Choose color for tool: ");
+    director->setToolColor(color);
 }
 void MainWindow::on_actionEraser_triggered() {
     this->setCursor(QCursor(QPixmap(":/icons/Delete-24.png")));
