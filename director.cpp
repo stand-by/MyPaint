@@ -25,10 +25,10 @@ void Director::setToolColor(QColor color) {
 }
 
 void Director::increaseToolWidth() {
-    tool->setPenWidth(tool->getPenWidth()+1);
+    if(tool != NULL) tool->setPenWidth(tool->getPenWidth()+1);
 }
 void Director::decreaseToolWidth() {
-    if(tool->getPenWidth() > 1) tool->setPenWidth(tool->getPenWidth()-1);
+    if(tool != NULL && tool->getPenWidth() > 1) tool->setPenWidth(tool->getPenWidth()-1);
 }
 
 void Director::setCursorTool() {

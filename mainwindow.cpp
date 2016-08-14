@@ -53,8 +53,8 @@ void MainWindow::on_actionEraser_triggered() {
 }
 
 void MainWindow::on_actionThicker_triggered() {
-
+    director->increaseToolWidth();
 }
 void MainWindow::on_actionThinner_triggered() {
-
+    director->decreaseToolWidth();
 }
