@@ -27,6 +27,7 @@ Director::~Director() {
 
 void Director::setCursorTool() {
     if(tool != NULL) delete tool;
+    tool = NULL;
 }
 void Director::setPencilTool() {
     if(tool != NULL) delete tool;
