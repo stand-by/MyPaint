@@ -2,6 +2,8 @@
 
 EllipseDrawingTool::EllipseDrawingTool(QObject *parent): AbstractDrawingTool(parent) {
     lastEllipse = NULL;
+    pen.setCapStyle(Qt::RoundCap);
+    pen.setJoinStyle(Qt::RoundJoin);
 }
 
 void EllipseDrawingTool::mousePress_reciever(QMouseEvent *event) {
