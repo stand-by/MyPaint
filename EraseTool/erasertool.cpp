@@ -1,4 +1,5 @@
 #include "erasertool.h"
+#include <math.h>
 
 EraserTool::EraserTool(QObject *parent): AbstractDrawingTool(parent) {
     itemToErase = NULL;
@@ -19,7 +20,7 @@ void EraserTool::mouseMove_reciever(QMouseEvent *event) {
     if (canDraw){
         lastPos = event->pos();
         itemToErase = scene->itemAt(event->pos(), view->transform());
-        if(itemToErase != 0) {
+        if(itemToErase != 0 && sqrt(pow((startPos.x() - lastPos.x()),2) + pow((startPos.y() - lastPos.y()),2)) > 5) {
             scene->removeItem(itemToErase);
             delete itemToErase;
         }
