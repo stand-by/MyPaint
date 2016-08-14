@@ -5,6 +5,7 @@
 #include <QtCore>
 #include <QtGui>
 #include <QColorDialog>
+#include <QFileDialog>
 #include "director.h"
 
 namespace Ui {
@@ -28,7 +29,7 @@ private slots:
     void on_actionEraser_triggered();
     void on_actionThinner_triggered();
     void on_actionThicker_triggered();
-
+    void on_actionSave_As_triggered();
 private:
     Ui::MainWindow *ui;
     Director *director;

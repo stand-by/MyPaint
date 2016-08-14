@@ -58,3 +58,12 @@ void MainWindow::on_actionThicker_triggered() {
 void MainWindow::on_actionThinner_triggered() {
     director->decreaseToolWidth();
 }
+
+void MainWindow::on_actionSave_As_triggered() {
+    QPixmap imageToSave = director->getSceneImage();
+    QString filename = QFileDialog::getSaveFileName(this, "Save image", QCoreApplication::applicationDirPath(), "JPEG (*.JPEG);;PNG (*.png)" );
+    if(!filename.isEmpty()) {
+        if(!filename.contains(".png") && !filename.contains(".jpg")) filename += ".png";
+        imageToSave.save(filename);
+    }
+}
